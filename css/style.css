@@ -3,20 +3,22 @@
 
 body {
   font-family: "Teko", sans-serif;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(250, 250, 250);
 }
-
-/*  */
 
 /* COLORS
 --------------------------------------------- */
 
-.accent {
-  color: #d91d00;
+:root {
+  --primary: #d91d00;
+  --dark: #333333;
 }
 
-.dark {
-  color: #333333;
+/* GLOBAL
+--------------------------------------------- */
+
+.accent {
+  color: var(--primary);
 }
 
 /* MOBILE NAV
@@ -26,8 +28,7 @@ nav {
   width: 100%;
   padding: 25px 0;
   background-color: white;
-  border-top: 6px solid #d91d00;
-  z-index: 100;
+  border-top: 6px solid var(--primary);
   position: fixed;
   z-index: 10;
   top: 0;
@@ -51,10 +52,11 @@ nav .container {
   right: 0;
   top: 0;
   width: 250px;
-  margin-top: 119px;
+  padding-top: 119px;
   transform: translateX(250px);
   transition: transform 250ms ease-in-out;
-  background-color: white;
+  background-color: rgb(245, 245, 245);
+  z-index: 20;
 }
 
 .sidebarMenuInner {
@@ -85,11 +87,11 @@ nav .container {
   cursor: pointer;
   text-decoration: none;
   padding-right: 20px;
-  border-right: 6px solid #d91d00;
+  border-right: 5px solid var(--primary);
 }
 
 .sidebarMenuInner li a.active {
-  color: #d91d00;
+  color: var(--primary);
 }
 
 input[type="checkbox"]:checked ~ #sidebarMenu {
@@ -112,6 +114,7 @@ input[type="checkbox"] {
   width: 100%;
   top: 22px;
   right: 0;
+  z-index: 30;
   height: 32px;
   width: 32px;
   color: black;
@@ -192,12 +195,12 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   }
 
   #nav-list a:hover {
-    color: #d91d00;
+    color: var(--primary);
     cursor: pointer;
   }
 
   #nav-list a.active {
-    border-bottom: 4px solid #d91d00;
+    border-bottom: 4px solid var(--primary);
   }
 
   #nav-list a.active:hover {
@@ -212,11 +215,11 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
   #estimate-nav {
     padding: 7px 14px 4px 14px;
-    border: 4px solid #d91d00;
+    border: 4px solid var(--primary);
   }
 
   #estimate-nav:hover {
-    background-color: #d91d00;
+    background-color: var(--primary);
     color: white !important;
   }
 }
@@ -228,6 +231,12 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   background-color: rgb(225, 225, 225);
   height: 100vh;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  #section-landing {
+    height: 75vh;
+  }
 }
 
 #section-landing h1 {
@@ -271,7 +280,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 footer {
   background-color: white;
-  border-bottom: 6px solid #d91d00;
+  border-bottom: 6px solid var(--primary);
   margin-top: 200px;
 }
 
@@ -281,5 +290,5 @@ footer p {
   font-weight: 300;
   color: rgb(119, 119, 119);
   text-align: center;
-  margin: 25px 0;
+  margin: 30px 0;
 }
