@@ -30,13 +30,34 @@
         <div class="row">
           <div class="twelve columns">
             <img id="nav-logo" src="./images/jot_logo.png" alt="" />
-            <a id="nav-toggle" href=""
-              ><i class="fa-solid fa-bars fa-2xl rotate"></i
-            ></a>
+            <input
+              type="checkbox"
+              class="openSidebarMenu"
+              id="openSidebarMenu"
+            />
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+              <div class="spinner diagonal part-1"></div>
+              <div class="spinner horizontal"></div>
+              <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+              <ul class="sidebarMenuInner">
+                <li>
+                  <a href="./index.html">ABOUT</a>
+                </li>
+                <li>
+                  <a href="./services.html">SERVICES</a>
+                </li>
+                <li>
+                  <a class="active" href="./our-work.html">OUR WORK</a>
+                </li>
+                <li>
+                  <a href="./contact.html">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
             <ul id="nav-list">
-              <li>
-                <a href="./index.html">ABOUT</a>
-              </li>
+              <li><a href="./index.html">ABOUT</a></li>
               <li><a href="./services.html">SERVICES</a></li>
               <li><a class="active" href="./our-work.html">OUR WORK</a></li>
               <li><a href="./contact.html">CONTACT US</a></li>
