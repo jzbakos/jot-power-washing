@@ -72,13 +72,42 @@
 
     <section id="content">
       <div class="container">
-        <div class="row">
-          <div class="twelve columns">
-            <div class="article">
-              <h1>GET IN TOUCH</h1>
-              <hr />
+        <div class="article contact-form">
+          <h1>GET IN TOUCH</h1>
+          <hr />
+          <form>
+            <div class="row">
+              <div class="six columns">
+                <input
+                  class="u-full-width"
+                  type="text"
+                  placeholder="Name"
+                  id="nameInput"
+                  style="margin-bottom: 40px"
+                />
+              </div>
+              <div class="six columns">
+                <input
+                  class="u-full-width"
+                  type="email"
+                  placeholder="Email"
+                  id="emailInput"
+                  style="margin-bottom: 40px"
+                />
+              </div>
             </div>
-          </div>
+            <textarea
+              class="u-full-width"
+              placeholder="Type Something..."
+              id="exampleMessage"
+              style="margin-bottom: 50px"
+            ></textarea>
+            <input
+              class="button u-full-width button-primary"
+              type="submit"
+              value="SEND"
+            />
+          </form>
         </div>
       </div>
     </section>

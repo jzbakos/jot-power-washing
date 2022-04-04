@@ -3,7 +3,7 @@
 
 body {
   font-family: "Teko", sans-serif;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(245, 245, 245);
 }
 
 /* COLORS
@@ -238,7 +238,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 --------------------------------------------- */
 
 #section-landing {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(235, 235, 235);
   height: 100vh;
   text-align: center;
   /* background-size: cover;
@@ -292,6 +292,10 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   min-height: 100vh;
 }
 
+#content .container {
+  margin-top: 200px;
+}
+
 #content h1 {
   font-size: 5.5rem;
   font-weight: 600;
@@ -325,6 +329,12 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin: 0;
 }
 
+.article.contact-form {
+  background-color: white;
+  box-shadow: 0 2px 6px 0 hsl(0deg 0% 0% / 20%);
+  padding: 40px 20px 30px 30px;
+}
+
 /* FOOTER
 --------------------------------------------- */
 
@@ -339,6 +349,6 @@ footer p {
   font-size: 1.3rem;
   font-weight: 300;
   text-align: center;
-  color: rgb(119, 119, 119);
+  color: rgb(80, 80, 80);
   margin: 35px 0;
 }
