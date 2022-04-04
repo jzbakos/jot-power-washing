@@ -21,6 +21,13 @@ body {
   color: var(--primary);
 }
 
+hr {
+  margin: 2.5rem 0;
+  height: 1px;
+  background-color: #e6d5d4;
+  border: none;
+}
+
 /* MOBILE NAV
 --------------------------------------------- */
 
@@ -125,7 +132,7 @@ input[type="checkbox"] {
   transition: all 0.3s;
   box-sizing: border-box;
   position: absolute;
-  height: 3px;
+  height: 4px;
   width: 100%;
   background-color: rgb(0, 0, 0);
 }
@@ -215,12 +222,15 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
   #estimate-nav {
     padding: 7px 14px 4px 14px;
+    background-color: var(--primary);
     border: 4px solid var(--primary);
+    color: white !important;
   }
 
   #estimate-nav:hover {
-    background-color: var(--primary);
-    color: white !important;
+    border: 4px solid var(--primary);
+    background-color: transparent;
+    color: rgb(30, 30, 30) !important;
   }
 }
 
@@ -228,34 +238,58 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 --------------------------------------------- */
 
 #section-landing {
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(240, 240, 240);
   height: 100vh;
   text-align: center;
+  /* background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #section-landing {
     height: 75vh;
+    text-align: left;
+    margin-bottom: 150px;
   }
 }
 
 #section-landing h1 {
   margin-top: 250px;
+  margin-bottom: 0;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 4.6rem;
   color: #333333;
 }
 
-/* LANDING
+@media (min-width: 768px) {
+  #section-landing h1 {
+    margin-top: 215px;
+    font-size: 6rem;
+  }
+}
+
+#section-landing h4 {
+  font-family: "Arimo", sans-serif;
+  color: #5f5f5f;
+  font-size: 2.3rem;
+  margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+  #section-landing h4 {
+    font-size: 2.5rem;
+    margin: 0 0 20px 0;
+  }
+}
+
+/* CONTENT
 --------------------------------------------- */
 
 #content {
   text-align: center;
   min-height: 100vh;
-}
-
-#content .container {
-  padding-top: 119px;
 }
 
 #content h1 {
@@ -266,13 +300,29 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #content p {
   font-size: 2.2rem;
-  font-weight: 300;
   font-family: "Arimo", sans-serif;
   color: #646464;
 }
 
 .article {
-  margin-top: 120px;
+  margin-top: 160px;
+}
+
+.article.material {
+  margin-top: 15px;
+  text-align: left;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px 0 hsl(0deg 0% 0% / 20%);
+  border-left: 5px solid var(--primary);
+}
+
+.article.material h2 {
+  font-family: "Arimo", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #333333;
+  margin: 0;
 }
 
 /* FOOTER
@@ -288,7 +338,7 @@ footer p {
   font-family: "Arimo", sans-serif;
   font-size: 1.3rem;
   font-weight: 300;
-  color: rgb(119, 119, 119);
   text-align: center;
-  margin: 30px 0;
+  color: rgb(119, 119, 119);
+  margin: 35px 0;
 }
