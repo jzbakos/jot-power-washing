@@ -344,7 +344,7 @@ textarea,
 select {
   font-size: 1.6rem;
   font-family: "Arimo", sans-serif;
-  padding: 10px 12px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  padding: 14px 12px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: rgb(240, 240, 240);
   border: none;
   box-shadow: none;
@@ -364,7 +364,7 @@ textarea {
   appearance: none;
 }
 textarea {
-  min-height: 65px;
+  min-height: 100px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
