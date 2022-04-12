@@ -396,12 +396,12 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-top: 200px;
   background-color: var(--primary);
   text-align: center;
-  padding: 80px 0;
+  padding: 70px 0;
 }
 
 #interested-footer h1 {
   margin: 0;
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 600;
   color: white;
 }
