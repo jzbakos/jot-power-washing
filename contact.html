@@ -84,11 +84,12 @@
       <div class="container contact">
         <div class="article contact-form">
           <h1>GET IN TOUCH</h1>
-          <form netlify>
+          <form name="contact" method="POST" data-netlify="true">
             <div class="row">
               <div class="six columns">
                 <input
                   class="u-full-width"
+                  name="name"
                   type="text"
                   placeholder="Name"
                   id="nameInput"
@@ -98,6 +99,7 @@
               <div class="six columns">
                 <input
                   class="u-full-width"
+                  name="email"
                   type="email"
                   placeholder="Email"
                   id="emailInput"
@@ -109,6 +111,7 @@
               <div class="six columns">
                 <input
                   class="u-full-width"
+                  name="phone"
                   type="number"
                   placeholder="Phone"
                   id="phoneInput"
@@ -118,6 +121,7 @@
               <div class="six columns">
                 <input
                   class="u-full-width"
+                  name="city"
                   type="text"
                   placeholder="City/Town"
                   id="cityInput"
@@ -127,6 +131,7 @@
             </div>
             <textarea
               class="u-full-width"
+              name="message"
               placeholder="Type your message here..."
               id="exampleMessage"
               style="margin-bottom: 50px"
