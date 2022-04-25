@@ -12,7 +12,7 @@ body {
 :root {
   --primary: #d91d00;
   --dark: #333333;
-  --tertiary: #ca3e1c;
+  --light: rgb(245, 245, 245);
 }
 
 /* GLOBAL
